@@ -1,0 +1,124 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 1,
+    "pending": 0,
+    "failures": 1,
+    "start": "2025-04-21T07:48:24.554Z",
+    "end": "2025-04-21T07:48:54.339Z",
+    "duration": 29785,
+    "testsRegistered": 2,
+    "passPercent": 50,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "7f368fbc-d5ae-48da-9f20-30ada64204d4",
+      "title": "",
+      "fullFile": "cypress\\tests\\order\\OrderlTest.ts",
+      "file": "cypress\\tests\\order\\OrderlTest.ts",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "8efb7639-78c2-4e14-b8bb-7387bab1d9e7",
+          "title": "order detail test ",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "test order detail",
+              "fullTitle": "order detail test  test order detail",
+              "timedOut": null,
+              "duration": 15424,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "purchaseItem();",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 10000ms: expected '<p.lead.text-muted.>' to contain text '790', but the text was 'Id: 8088590Amount: 0 USDCard Number: 123Name: khoaDate: 21/3/2025'",
+                "estack": "AssertionError: Timed out retrying after 10000ms: expected '<p.lead.text-muted.>' to contain text '790', but the text was 'Id: 8088590Amount: 0 USDCard Number: 123Name: khoaDate: 21/3/2025'\n    at Context.eval (webpack://newapp/./cypress/tests/order/OrderlTest.ts:54:31)\n    at getRet (https://demoblaze.com/__cypress/runner/cypress_runner.js:119652:20)\n    at tryCatcher (https://demoblaze.com/__cypress/runner/cypress_runner.js:1777:23)\n    at Promise.attempt.Promise.try (https://demoblaze.com/__cypress/runner/cypress_runner.js:4285:29)\n    at Context.thenFn (https://demoblaze.com/__cypress/runner/cypress_runner.js:119663:66)\n    at Context.then (https://demoblaze.com/__cypress/runner/cypress_runner.js:119914:21)\n    at wrapped (https://demoblaze.com/__cypress/runner/cypress_runner.js:140191:19)",
+                "diff": "- 'Id: 8088590Amount: 0 USDCard Number: 123Name: khoaDate: 21/3/2025'\n+ '790'\n"
+              },
+              "uuid": "3cfef024-e324-4c36-afb9-6e86be8b7df2",
+              "parentUUID": "8efb7639-78c2-4e14-b8bb-7387bab1d9e7",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "test login after that  order ",
+              "fullTitle": "order detail test  test login after that  order ",
+              "timedOut": null,
+              "duration": 14249,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "var username = LOGIN_CREDS.username, password = LOGIN_CREDS.password;\nlogin(username, password);\npurchaseItem();",
+              "err": {},
+              "uuid": "dfdb4681-2949-44bf-9487-5c83be0ddfd4",
+              "parentUUID": "8efb7639-78c2-4e14-b8bb-7387bab1d9e7",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "dfdb4681-2949-44bf-9487-5c83be0ddfd4"
+          ],
+          "failures": [
+            "3cfef024-e324-4c36-afb9-6e86be8b7df2"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 29673,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.2.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": null,
+      "version": "6.2.0"
+    }
+  }
+}

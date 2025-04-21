@@ -5,11 +5,12 @@
   "type": "commonjs",
   "scripts": {
     "dev": "vite",
+    "pretest": "rimraf mochawesome.json",
     "build": "tsc -b && vite build",
     "test": "cypress run",
     "open": "cypress open",
     "test-br": "cypress run --browser chrome --headed",
-    "test:mocha-reporter": "npm run test --reporter mochawesome --reporter-options reportDir=\"results\",overwrite=false,html=false,json=true",
+    "test:mocha-reporter": "npm run pretest && npm run test --reporter mochawesome --reporter-options reportDir=\"results\",overwrite=false,html=false,json=true",
     "merge-rp": "mochawesome-merge \"results/*.json\" > mochawesome.json",
     "build-rp": "marge mochawesome.json",
     "open-rp": "npm run merge-rp && npm run build-rp && serve mochawesome-report",
@@ -38,6 +39,7 @@
     "mochawesome": "^7.1.3",
     "mochawesome-merge": "^4.4.1",
     "mochawesome-report-generator": "^6.2.0",
+    "rimraf": "^6.0.1",
     "typescript": "~5.7.2",
     "typescript-eslint": "^8.24.1",
     "vite": "^6.2.0"
