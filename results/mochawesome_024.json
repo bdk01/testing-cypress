@@ -1,0 +1,124 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 2,
+    "pending": 0,
+    "failures": 0,
+    "start": "2025-04-21T06:34:52.854Z",
+    "end": "2025-04-21T06:35:12.124Z",
+    "duration": 19270,
+    "testsRegistered": 2,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "8b7cb00e-ad04-44f8-a669-159f7c7233d5",
+      "title": "",
+      "fullFile": "cypress\\tests\\order\\OrderlTest.ts",
+      "file": "cypress\\tests\\order\\OrderlTest.ts",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "0d7a21ff-ebdf-4e73-b175-44d2fdb02a71",
+          "title": "order detail test ",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "test order detail",
+              "fullTitle": "order detail test  test order detail",
+              "timedOut": null,
+              "duration": 9249,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "purchaseItem();",
+              "err": {},
+              "uuid": "82d11172-095e-445c-87e0-a44ff2003b1e",
+              "parentUUID": "0d7a21ff-ebdf-4e73-b175-44d2fdb02a71",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "test login after that  order ",
+              "fullTitle": "order detail test  test login after that  order ",
+              "timedOut": null,
+              "duration": 9899,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "var username = LOGIN_CREDS.username, password = LOGIN_CREDS.password;\nlogin(username, password);\npurchaseItem();",
+              "err": {},
+              "uuid": "8a2e1a4a-11b5-43bc-9000-402ee31cdf4e",
+              "parentUUID": "0d7a21ff-ebdf-4e73-b175-44d2fdb02a71",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "82d11172-095e-445c-87e0-a44ff2003b1e",
+            "8a2e1a4a-11b5-43bc-9000-402ee31cdf4e"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 19148,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.2.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "results",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

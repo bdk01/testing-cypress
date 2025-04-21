@@ -1,0 +1,105 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2025-04-21T06:36:05.162Z",
+    "end": "2025-04-21T06:36:08.036Z",
+    "duration": 2874,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "6f8081b7-c46c-47ef-a4ee-633ad168be85",
+      "title": "",
+      "fullFile": "cypress\\tests\\backup\\specWithinAndFindMethod.cy.ts",
+      "file": "cypress\\tests\\backup\\specWithinAndFindMethod.cy.ts",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "4f428d6f-2488-43e5-8dfd-160f641c1ae2",
+          "title": "Within test and find",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "find method",
+              "fullTitle": "Within test and find find method",
+              "timedOut": null,
+              "duration": 776,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit(\"https://www.simplyrecipes.com/\");\ncy.get('.showcase__hero').find('.card__title').each(function (title, index) {\n    cy.log(index);\n});",
+              "err": {},
+              "uuid": "73592ef4-3550-4ae6-a2da-14789222c69a",
+              "parentUUID": "4f428d6f-2488-43e5-8dfd-160f641c1ae2",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "73592ef4-3550-4ae6-a2da-14789222c69a"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 776,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.2.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "results",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

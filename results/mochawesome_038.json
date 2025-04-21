@@ -1,0 +1,124 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 2,
+    "pending": 0,
+    "failures": 0,
+    "start": "2025-04-21T06:36:55.822Z",
+    "end": "2025-04-21T06:36:58.686Z",
+    "duration": 2864,
+    "testsRegistered": 2,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "7b960211-9256-4ee0-90d6-27364291f8e2",
+      "title": "",
+      "fullFile": "cypress\\tests\\signup\\SignUpTest.ts",
+      "file": "cypress\\tests\\signup\\SignUpTest.ts",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "962486b1-8e63-4a6b-b008-e8932173dd18",
+          "title": "SignUp test ",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "test login credential",
+              "fullTitle": "SignUp test  test login credential",
+              "timedOut": null,
+              "duration": 2061,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "var username = SignUp_CREDS.username, password = SignUp_CREDS.password;\nsignup(username, password);\ncy.on('window:alert', function (alert) {\n    expect(alert).to.contains(\"Sign up successful,\");\n});",
+              "err": {},
+              "uuid": "ce7d11ce-aa95-4442-ac59-a8626b714d5a",
+              "parentUUID": "962486b1-8e63-4a6b-b008-e8932173dd18",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "should be able to see userexist",
+              "fullTitle": "SignUp test  should be able to see userexist",
+              "timedOut": null,
+              "duration": 693,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "var password = SignUp_CREDS.password;\nsignup(\"khoa25\", \"\".concat(password, \"_qwdqw\"));\ncy.on('window:alert', function (alert) {\n    expect(alert).to.contains(\"User exist\");\n});",
+              "err": {},
+              "uuid": "1ead8e45-8029-4590-b799-40594fe1b8e2",
+              "parentUUID": "962486b1-8e63-4a6b-b008-e8932173dd18",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "ce7d11ce-aa95-4442-ac59-a8626b714d5a",
+            "1ead8e45-8029-4590-b799-40594fe1b8e2"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 2754,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.2.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "results",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

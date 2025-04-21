@@ -9,10 +9,10 @@
     "test": "cypress run",
     "open": "cypress open",
     "test-br": "cypress run --browser chrome --headed",
-    "test-br-mocha": "yarn test --reporter mochawesome --reporter-options reportDir=\"results\",overwrite=false,html=false,json=true",
+    "test:mocha-reporter": "npm run test --reporter mochawesome --reporter-options reportDir=\"results\",overwrite=false,html=false,json=true",
     "merge-rp": "mochawesome-merge \"results/*.json\" > mochawesome.json",
     "build-rp": "marge mochawesome.json",
-    "open-rp": "yarn merge-rp && yarn build-rp && serve mochawesome-report",
+    "open-rp": "npm run merge-rp && npm run build-rp && serve mochawesome-report",
     "lint": "eslint .",
     "preview": "vite preview"
   },
