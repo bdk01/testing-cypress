@@ -1,0 +1,1602 @@
+{
+  "stats": {
+    "suites": 23,
+    "tests": 33,
+    "passes": 26,
+    "pending": 0,
+    "failures": 7,
+    "testsRegistered": 33,
+    "passPercent": 78.78787878787878,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false,
+    "start": "2025-04-21T03:35:49.025Z",
+    "end": "2025-04-21T03:41:19.918Z",
+    "duration": 330893
+  },
+  "results": [
+    {
+      "uuid": "0d710500-7ed0-44c2-9b2e-8e029f1ef5d8",
+      "title": "",
+      "fullFile": "cypress\\tests\\order\\OrderlTest.ts",
+      "file": "cypress\\tests\\order\\OrderlTest.ts",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "220c311f-8a4f-4ecb-8e8a-ac4e544111b1",
+          "title": "order detail test ",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "test order detail",
+              "fullTitle": "order detail test  test order detail",
+              "timedOut": null,
+              "duration": 22796,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "purchaseItem();",
+              "err": {
+                "message": "TypeError: Cannot read properties of undefined (reading 'body')",
+                "estack": "TypeError: Cannot read properties of undefined (reading 'body')\n    at Context.eval (webpack://newapp/./cypress/support/HomePageAPI.ts:6:36)\n    at getRet (https://demoblaze.com/__cypress/runner/cypress_runner.js:119652:20)\n    at tryCatcher (https://demoblaze.com/__cypress/runner/cypress_runner.js:1777:23)\n    at Promise.attempt.Promise.try (https://demoblaze.com/__cypress/runner/cypress_runner.js:4285:29)\n    at Context.thenFn (https://demoblaze.com/__cypress/runner/cypress_runner.js:119663:66)\n    at Context.then (https://demoblaze.com/__cypress/runner/cypress_runner.js:119914:21)\n    at wrapped (https://demoblaze.com/__cypress/runner/cypress_runner.js:140191:19)\n    at <unknown> (https://demoblaze.com/__cypress/runner/cypress_runner.js:146136:15)\n    at tryCatcher (https://demoblaze.com/__cypress/runner/cypress_runner.js:1777:23)",
+                "diff": null
+              },
+              "uuid": "bc43b08a-1f95-4053-a06a-4e4ffd10a248",
+              "parentUUID": "220c311f-8a4f-4ecb-8e8a-ac4e544111b1",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "test login after that  order ",
+              "fullTitle": "order detail test  test login after that  order ",
+              "timedOut": null,
+              "duration": 9535,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "var username = LOGIN_CREDS.username, password = LOGIN_CREDS.password;\nlogin(username, password);\npurchaseItem();",
+              "err": {
+                "message": "CypressError: Timed out retrying after 5000ms: `cy.wait()` timed out waiting `5000ms` for the 1st request to the route: `entries`. No request ever occurred.\n\nhttps://on.cypress.io/wait",
+                "estack": "CypressError: Timed out retrying after 5000ms: `cy.wait()` timed out waiting `5000ms` for the 1st request to the route: `entries`. No request ever occurred.\n\nhttps://on.cypress.io/wait\n    at cypressErr (https://demoblaze.com/__cypress/runner/cypress_runner.js:76205:18)\n    at Object.errByPath (https://demoblaze.com/__cypress/runner/cypress_runner.js:76259:10)\n    at checkForXhr (https://demoblaze.com/__cypress/runner/cypress_runner.js:137482:84)\n    at <unknown> (https://demoblaze.com/__cypress/runner/cypress_runner.js:137508:28)\n    at tryCatcher (https://demoblaze.com/__cypress/runner/cypress_runner.js:1777:23)\n    at Promise.attempt.Promise.try (https://demoblaze.com/__cypress/runner/cypress_runner.js:4285:29)\n    at whenStable (https://demoblaze.com/__cypress/runner/cypress_runner.js:145864:68)\n    at <unknown> (https://demoblaze.com/__cypress/runner/cypress_runner.js:145805:14)\n    at tryCatcher (https://demoblaze.com/__cypress/runner/cypress_runner.js:1777:23)\n    at Promise._settlePromiseFromHandler (https://demoblaze.com/__cypress/runner/cypress_runner.js:1489:31)\n    at Promise._settlePromise (https://demoblaze.com/__cypress/runner/cypress_runner.js:1546:18)\n    at Promise._settlePromise0 (https://demoblaze.com/__cypress/runner/cypress_runner.js:1591:10)\n    at Promise._settlePromises (https://demoblaze.com/__cypress/runner/cypress_runner.js:1671:18)\n    at Promise._fulfill (https://demoblaze.com/__cypress/runner/cypress_runner.js:1615:18)\n    at <unknown> (https://demoblaze.com/__cypress/runner/cypress_runner.js:5420:46)",
+                "diff": null
+              },
+              "uuid": "548ae891-5c05-499f-abbc-7856bcb38537",
+              "parentUUID": "220c311f-8a4f-4ecb-8e8a-ac4e544111b1",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "bc43b08a-1f95-4053-a06a-4e4ffd10a248",
+            "548ae891-5c05-499f-abbc-7856bcb38537"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 32331,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "cfb04d19-0bbe-4a3f-91fd-8c084cc51363",
+      "title": "",
+      "fullFile": "cypress\\tests\\signup\\SignUpTest.ts",
+      "file": "cypress\\tests\\signup\\SignUpTest.ts",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "5f5f0e1b-e922-42bc-9cb0-5e07603bd90a",
+          "title": "SignUp test ",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "test login credential",
+              "fullTitle": "SignUp test  test login credential",
+              "timedOut": null,
+              "duration": 1715,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "var username = SignUp_CREDS.username, password = SignUp_CREDS.password;\nsignup(username, password);\ncy.on('window:alert', function (alert) {\n    expect(alert).to.contains(\"Sign up successful,\");\n});",
+              "err": {},
+              "uuid": "8fb8a0aa-3225-4897-929b-cb5077b9493e",
+              "parentUUID": "5f5f0e1b-e922-42bc-9cb0-5e07603bd90a",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "should be able to see userexist",
+              "fullTitle": "SignUp test  should be able to see userexist",
+              "timedOut": null,
+              "duration": 817,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "var password = SignUp_CREDS.password;\nsignup(\"khoa25\", \"\".concat(password, \"_qwdqw\"));\ncy.on('window:alert', function (alert) {\n    expect(alert).to.contains(\"User exist\");\n});",
+              "err": {},
+              "uuid": "deee0989-3386-435d-9885-887fc03f69b2",
+              "parentUUID": "5f5f0e1b-e922-42bc-9cb0-5e07603bd90a",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "8fb8a0aa-3225-4897-929b-cb5077b9493e",
+            "deee0989-3386-435d-9885-887fc03f69b2"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 2532,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "e6c95f51-619f-408e-83dd-2358f56e4cff",
+      "title": "",
+      "fullFile": "cypress\\tests\\backup\\LoginTest.cy.ts",
+      "file": "cypress\\tests\\backup\\LoginTest.cy.ts",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "bce96880-2c18-40be-b7b5-05b7b98044f4",
+          "title": " homepage test login",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "login by cookie api ",
+              "fullTitle": " homepage test login login by cookie api ",
+              "timedOut": null,
+              "duration": 21198,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "var apiItem = apiProduct.map(function (item) {\n    return {\n        itemName: item.title.replace(\"\\n\", \"\"),\n        itemPrice: \"$\".concat(item.price),\n    };\n});\nnew DemoBlazePage_1.default().getAllCardData().then(function (allCardData) {\n    cy.wrap(\"\").then(function () {\n        expect(allCardData).to.have.deep.eq(apiItem);\n    });\n});",
+              "err": {
+                "message": "CypressError: `cy.request()` failed trying to load:\n\nhttps://api.demoblaze.com/login\n\nWe attempted to make an http request to this URL but the request failed without a response.\n\nWe received this error at the network level:\n\n  > Error: connect ETIMEDOUT 2404:6800:4005:80b::2013:443\n\n-----------------------------------------------------------\n\nThe request we sent was:\n\nMethod: POST\nURL: https://api.demoblaze.com/login\n\n-----------------------------------------------------------\n\nCommon situations why this would fail:\n  - you don't have internet access\n  - you forgot to run / boot your web server\n  - your web server isn't accessible\n  - you have weird network configuration settings on your computer\n\nhttps://on.cypress.io/request\n\nBecause this error occurred during a `before each` hook we are skipping the remaining tests in the current suite: ` homepage test login`",
+                "estack": "CypressError: `cy.request()` failed trying to load:\n\nhttps://api.demoblaze.com/login\n\nWe attempted to make an http request to this URL but the request failed without a response.\n\nWe received this error at the network level:\n\n    at <unknown> (  > Error: connect ETIMEDOUT 2404:6800:4005:80b::2013:443)\n\n-----------------------------------------------------------\n\nThe request we sent was:\n\nMethod: POST\nURL: https://api.demoblaze.com/login\n\n-----------------------------------------------------------\n\nCommon situations why this would fail:\n- you don't have internet access\n- you forgot to run / boot your web server\n- your web server isn't accessible\n- you have weird network configuration settings on your computer\n    at <unknown> (https://demoblaze.com/__cypress/runner/cypress_runner.js:135043:70)\n    at tryCatcher (https://demoblaze.com/__cypress/runner/cypress_runner.js:1777:23)\n    at <unknown> (https://demoblaze.com/__cypress/runner/cypress_runner.js:4173:37)\n    at tryCatcher (https://demoblaze.com/__cypress/runner/cypress_runner.js:1777:23)\n    at Promise._settlePromiseFromHandler (https://demoblaze.com/__cypress/runner/cypress_runner.js:1489:31)\n    at Promise._settlePromise (https://demoblaze.com/__cypress/runner/cypress_runner.js:1546:18)\n    at Promise._settlePromise0 (https://demoblaze.com/__cypress/runner/cypress_runner.js:1591:10)\n    at Promise._settlePromises (https://demoblaze.com/__cypress/runner/cypress_runner.js:1667:18)\n    at _drainQueueStep (https://demoblaze.com/__cypress/runner/cypress_runner.js:2377:12)\n    at _drainQueue (https://demoblaze.com/__cypress/runner/cypress_runner.js:2370:9)\n    at Async._drainQueues (https://demoblaze.com/__cypress/runner/cypress_runner.js:2386:5)\n    at Async.drainQueues (https://demoblaze.com/__cypress/runner/cypress_runner.js:2256:14)\nFrom Your Spec Code:\n    at Context.eval (webpack://newapp/./cypress/support/commands.ts:46:7)\n    at wrapped (https://demoblaze.com/__cypress/runner/cypress_runner.js:140183:43)\n\nFrom Node.js Internals:\n    at <unknown> (      RequestError: Error: connect ETIMEDOUT 2404:6800:4005:80b::2013:443)\n    at new r (<embedded>:227:441460)\n    at ee.callback (<embedded>:227:447461)\n    at e.callback.s.callback [as _callback] (<embedded>:227:446907)\n    at s._callback.s.callback.s.callback (<embedded>:290:105750)\n    at ee.emit (node:events:518:28)\n    at ee.onRequestError (<embedded>:290:114692)\n    at ClientRequest.emit (node:events:530:35)\n    at emitErrorEvent (node:_http_client:101:11)\n    at TLSSocket.socketErrorListener (node:_http_client:504:5)\n    at TLSSocket.emit (node:events:518:28)\n    at emitErrorNT (node:internal/streams/destroy:169:8)\n    at emitErrorCloseNT (node:internal/streams/destroy:128:3)\n    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)",
+                "diff": null
+              },
+              "uuid": "0eadccc6-7d04-4a49-9915-baa5fc554be9",
+              "parentUUID": "bce96880-2c18-40be-b7b5-05b7b98044f4",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "0eadccc6-7d04-4a49-9915-baa5fc554be9"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 21198,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "3d566805-1d73-4bef-8f96-f055d22274ad",
+      "title": "",
+      "fullFile": "cypress\\tests\\backup\\spec.cy.ts",
+      "file": "cypress\\tests\\backup\\spec.cy.ts",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "3eab14a4-8992-41de-81ec-f2f111c42a5c",
+          "title": "template spec",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "passes",
+              "fullTitle": "template spec passes",
+              "timedOut": null,
+              "duration": 3487,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit(\"https://the-internet.herokuapp.com/login\");\n/* cy.get(\"#username\").type('tomsmith')\ncy.get(\"#password\").type('SuperSecretPassword!')\ncy.get(\"#login > button\").click()\ncy.wait(3000) */\nvar gg = cy.get(\"input\");\n/* gg.eq(0).type('qwewqe') */\ngg.then(function (items) {\n    cy.get(items[0]).clear();\n    cy.get(items[0]).type('qwdqdw');\n    cy.get(items[1]).type('qwdqdw');\n});",
+              "err": {},
+              "uuid": "6ac66c52-6a38-4d4e-85ab-8cc5296f0e93",
+              "parentUUID": "3eab14a4-8992-41de-81ec-f2f111c42a5c",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "6ac66c52-6a38-4d4e-85ab-8cc5296f0e93"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 3487,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "0dc345c7-8ccd-4857-8920-9e8834b47cc4",
+      "title": "",
+      "fullFile": "cypress\\tests\\backup\\spec2.cy.ts",
+      "file": "cypress\\tests\\backup\\spec2.cy.ts",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "3edce6d2-79ae-4700-8c33-da031074df21",
+          "title": "template spec",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "passes",
+              "fullTitle": "template spec passes",
+              "timedOut": null,
+              "duration": 3148,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit(\"https://the-internet.herokuapp.com/\");\ncy.get(\"a[href='/login'\").click();\ncy.location(\"pathname\", { timeout: 1000 }).should(\"eq\", \"/login\");",
+              "err": {},
+              "uuid": "7a6285c9-6d60-4589-950a-3ec2d4ab71b6",
+              "parentUUID": "3edce6d2-79ae-4700-8c33-da031074df21",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "7a6285c9-6d60-4589-950a-3ec2d4ab71b6"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 3148,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "e41546fa-0ba4-4814-b3dd-e8e9b50e9633",
+      "title": "",
+      "fullFile": "cypress\\tests\\authen\\LoginTest.ts",
+      "file": "cypress\\tests\\authen\\LoginTest.ts",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "1690d193-f194-4dc4-8620-9ed50485d2d6",
+          "title": "login test ",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "test login credential",
+              "fullTitle": "login test  test login credential",
+              "timedOut": null,
+              "duration": 12362,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "var username = LOGIN_CREDS.username, password = LOGIN_CREDS.password;\nlogin(username, password);\nloginComp.getLoggedUsername().should('be.visible');\nloginComp.getLoggedUsername().should('contain.text', \"Welcome \".concat(LOGIN_CREDS.username));",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 10000ms: expected '<a#nameofuser.nav-link>' to be 'visible'\n\nThis element `<a#nameofuser.nav-link>` is not visible because it has CSS property: `display: none`",
+                "estack": "AssertionError: Timed out retrying after 10000ms: expected '<a#nameofuser.nav-link>' to be 'visible'\n\nThis element `<a#nameofuser.nav-link>` is not visible because it has CSS property: `display: none`\n    at Context.eval (webpack://newapp/./cypress/tests/authen/LoginTest.ts:28:34)",
+                "diff": null
+              },
+              "uuid": "31d3b56c-349e-4913-a75b-2348cb25ad69",
+              "parentUUID": "1690d193-f194-4dc4-8620-9ed50485d2d6",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "should be able to see wrong pass",
+              "fullTitle": "login test  should be able to see wrong pass",
+              "timedOut": null,
+              "duration": 4415,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "var username = LOGIN_CREDS.username, password = LOGIN_CREDS.password;\nlogin(username, \"\".concat(password, \"_qwdqw\"));\ncy.on('window:alert', function (alert) {\n    expect(alert).to.contains(\"Wrong password\");\n});",
+              "err": {},
+              "uuid": "2c10151c-7739-4465-a2c2-dd20ac4f3983",
+              "parentUUID": "1690d193-f194-4dc4-8620-9ed50485d2d6",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "2c10151c-7739-4465-a2c2-dd20ac4f3983"
+          ],
+          "failures": [
+            "31d3b56c-349e-4913-a75b-2348cb25ad69"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 16777,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "533be7e5-5e0a-4d2d-93b7-68627294ffb2",
+      "title": "",
+      "fullFile": "cypress\\tests\\order\\OrderlTest.ts",
+      "file": "cypress\\tests\\order\\OrderlTest.ts",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "b80f995b-fde0-4167-a5ff-cdd3743dab90",
+          "title": "order detail test ",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "test order detail",
+              "fullTitle": "order detail test  test order detail",
+              "timedOut": null,
+              "duration": 22901,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "purchaseItem();",
+              "err": {
+                "message": "TypeError: Cannot read properties of undefined (reading 'body')",
+                "estack": "TypeError: Cannot read properties of undefined (reading 'body')\n    at Context.eval (webpack://newapp/./cypress/support/HomePageAPI.ts:6:36)\n    at getRet (https://demoblaze.com/__cypress/runner/cypress_runner.js:119652:20)\n    at tryCatcher (https://demoblaze.com/__cypress/runner/cypress_runner.js:1777:23)\n    at Promise.attempt.Promise.try (https://demoblaze.com/__cypress/runner/cypress_runner.js:4285:29)\n    at Context.thenFn (https://demoblaze.com/__cypress/runner/cypress_runner.js:119663:66)\n    at Context.then (https://demoblaze.com/__cypress/runner/cypress_runner.js:119914:21)\n    at wrapped (https://demoblaze.com/__cypress/runner/cypress_runner.js:140191:19)\n    at <unknown> (https://demoblaze.com/__cypress/runner/cypress_runner.js:146136:15)\n    at tryCatcher (https://demoblaze.com/__cypress/runner/cypress_runner.js:1777:23)",
+                "diff": null
+              },
+              "uuid": "eb1d41f8-fb9f-43eb-8b98-103873a4c165",
+              "parentUUID": "b80f995b-fde0-4167-a5ff-cdd3743dab90",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "test login after that  order ",
+              "fullTitle": "order detail test  test login after that  order ",
+              "timedOut": null,
+              "duration": 15250,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "var username = LOGIN_CREDS.username, password = LOGIN_CREDS.password;\nlogin(username, password);\npurchaseItem();",
+              "err": {},
+              "uuid": "46985858-d993-481f-80ce-5350ebac26c8",
+              "parentUUID": "b80f995b-fde0-4167-a5ff-cdd3743dab90",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "46985858-d993-481f-80ce-5350ebac26c8"
+          ],
+          "failures": [
+            "eb1d41f8-fb9f-43eb-8b98-103873a4c165"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 38151,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "619fc2fe-9846-43ae-9249-5a194cd77ce0",
+      "title": "",
+      "fullFile": "cypress\\tests\\backup\\LoginTest.cy.ts",
+      "file": "cypress\\tests\\backup\\LoginTest.cy.ts",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "b29c42b4-8bcb-444e-bf43-f31262f24051",
+          "title": " homepage test login",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "login by cookie api ",
+              "fullTitle": " homepage test login login by cookie api ",
+              "timedOut": null,
+              "duration": 2496,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "var apiItem = apiProduct.map(function (item) {\n    return {\n        itemName: item.title.replace(\"\\n\", \"\"),\n        itemPrice: \"$\".concat(item.price),\n    };\n});\nnew DemoBlazePage_1.default().getAllCardData().then(function (allCardData) {\n    cy.wrap(\"\").then(function () {\n        expect(allCardData).to.have.deep.eq(apiItem);\n    });\n});",
+              "err": {},
+              "uuid": "ce5fc6f8-0e42-4f50-9079-2cf9ce5406c2",
+              "parentUUID": "b29c42b4-8bcb-444e-bf43-f31262f24051",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "ce5fc6f8-0e42-4f50-9079-2cf9ce5406c2"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 2496,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "6eb4ee60-fb18-4ae3-afbd-ac30c5f16723",
+      "title": "",
+      "fullFile": "cypress\\tests\\backup\\spec.cy.ts",
+      "file": "cypress\\tests\\backup\\spec.cy.ts",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "7407cd2a-8b16-4e9f-8187-a4a772aad3bc",
+          "title": "template spec",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "passes",
+              "fullTitle": "template spec passes",
+              "timedOut": null,
+              "duration": 3380,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit(\"https://the-internet.herokuapp.com/login\");\n/* cy.get(\"#username\").type('tomsmith')\ncy.get(\"#password\").type('SuperSecretPassword!')\ncy.get(\"#login > button\").click()\ncy.wait(3000) */\nvar gg = cy.get(\"input\");\n/* gg.eq(0).type('qwewqe') */\ngg.then(function (items) {\n    cy.get(items[0]).clear();\n    cy.get(items[0]).type('qwdqdw');\n    cy.get(items[1]).type('qwdqdw');\n});",
+              "err": {},
+              "uuid": "8cfe2b5a-30b1-46ef-8644-6af0f251a796",
+              "parentUUID": "7407cd2a-8b16-4e9f-8187-a4a772aad3bc",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "8cfe2b5a-30b1-46ef-8644-6af0f251a796"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 3380,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "0caac436-a4ca-4aa5-8373-d5519f9fb400",
+      "title": "",
+      "fullFile": "cypress\\tests\\backup\\spec2.cy.ts",
+      "file": "cypress\\tests\\backup\\spec2.cy.ts",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "2806ecee-d212-42f4-81f2-cd2543f1ece1",
+          "title": "template spec",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "passes",
+              "fullTitle": "template spec passes",
+              "timedOut": null,
+              "duration": 3297,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit(\"https://the-internet.herokuapp.com/\");\ncy.get(\"a[href='/login'\").click();\ncy.location(\"pathname\", { timeout: 1000 }).should(\"eq\", \"/login\");",
+              "err": {},
+              "uuid": "5527300c-bc65-4bb6-a66b-84fe635c2133",
+              "parentUUID": "2806ecee-d212-42f4-81f2-cd2543f1ece1",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "5527300c-bc65-4bb6-a66b-84fe635c2133"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 3297,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "37517348-0723-4cd8-8737-2e54dd8847a4",
+      "title": "",
+      "fullFile": "cypress\\tests\\backup\\specAmazonSearch.cy.ts",
+      "file": "cypress\\tests\\backup\\specAmazonSearch.cy.ts",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "4f8afb60-fbd6-4ec6-823f-3e064aaec4fa",
+          "title": "Amazon",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "should able to search",
+              "fullTitle": "Amazon should able to search",
+              "timedOut": null,
+              "duration": 12383,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit(\"https://www.amazon.com/\");\nvar SEARCH_TEXT = \"table\";\nvar AmHomePage = new AmazonHomePage_1.default();\nAmHomePage.searchTxtBxElem.type(SEARCH_TEXT);\nAmHomePage.searchBtnElem.click();\nvar AmazSearchResult = new AmazonSearchResult_1.default();\nAmazSearchResult.searchItemElemList.should(\"not.have.length\", 0);",
+              "err": {},
+              "uuid": "137e14b2-5e40-4f66-b468-b9351be3a258",
+              "parentUUID": "4f8afb60-fbd6-4ec6-823f-3e064aaec4fa",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "137e14b2-5e40-4f66-b468-b9351be3a258"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 12383,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "3147f5b9-abb7-4070-a996-7e252b9aa674",
+      "title": "",
+      "fullFile": "cypress\\tests\\backup\\specDemoBlaze.cy.ts",
+      "file": "cypress\\tests\\backup\\specDemoBlaze.cy.ts",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "022a7235-7966-4f3f-adc6-d778417db4ea",
+          "title": "Blaze homepage",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "balze test card intercept",
+              "fullTitle": "Blaze homepage balze test card intercept",
+              "timedOut": null,
+              "duration": 2486,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit(\"https://demoblaze.com/index.html\");\ncy.intercept(\"/entries\").as('entries');\ncy.wait('@entries');\ncy.get('@entries').then(function (entries) {\n    var apiItem = entries.response.body.Items;\n    apiItem = apiItem.map(function (item) {\n        return {\n            itemName: item.title.replace('\\n', ''),\n            itemPrice: \"$\".concat(item.price)\n        };\n    });\n    cy.log(JSON.stringify(apiItem));\n    new DemoBlazePage_1.default().getAllCardData().then(function (allCardData) {\n        cy.wrap(\"\").then(function () {\n            expect(allCardData).to.have.deep.eq(apiItem);\n            /* cy.log(JSON.stringify(ProductData)) */\n        });\n    });\n});",
+              "err": {},
+              "uuid": "fc63c33e-e3d7-4155-8114-018a2d567396",
+              "parentUUID": "022a7235-7966-4f3f-adc6-d778417db4ea",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "fc63c33e-e3d7-4155-8114-018a2d567396"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 2486,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "2855a499-acb0-4915-a759-3e53f3b54dfe",
+      "title": "",
+      "fullFile": "cypress\\tests\\backup\\specDemoBlazeBeforeTest.cy.ts",
+      "file": "cypress\\tests\\backup\\specDemoBlazeBeforeTest.cy.ts",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "679ce8c8-17a9-4fea-a4ba-61f25ef47854",
+          "title": "Blaze homepage test before",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "balze test card",
+              "fullTitle": "Blaze homepage test before balze test card",
+              "timedOut": null,
+              "duration": 1669,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "var apiItem = apiProduct.map(function (item) {\n    return {\n        itemName: item.title.replace(\"\\n\", \"\"),\n        itemPrice: \"$\".concat(item.price),\n    };\n});\nnew DemoBlazePage_1.default().getAllCardData().then(function (allCardData) {\n    cy.wrap(\"\").then(function () {\n        expect(allCardData).to.have.deep.eq(apiItem);\n    });\n});",
+              "err": {},
+              "uuid": "93d23de8-d4f7-4d31-976c-4cfabab1b170",
+              "parentUUID": "679ce8c8-17a9-4fea-a4ba-61f25ef47854",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "93d23de8-d4f7-4d31-976c-4cfabab1b170"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 1669,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "9e8875d2-678c-421c-b92e-8cdc41135fbd",
+      "title": "",
+      "fullFile": "cypress\\tests\\backup\\specSRHomePageTest.cy.ts",
+      "file": "cypress\\tests\\backup\\specSRHomePageTest.cy.ts",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "b158699e-4e25-43a3-93d0-7504caa88b9a",
+          "title": "SR homepage",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "within method",
+              "fullTitle": "SR homepage within method",
+              "timedOut": null,
+              "duration": 751,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit(\"https://www.simplyrecipes.com/\");\nnew SRHomePage_1.SRHomePage().getHeroComTitle().then(function (title) {\n    cy.wrap(\"\").then(function () {\n        expect(title).to.be.eq('My Dutch Baby Recipe Is Totally Foolproof—I Make It Every Weekend');\n    });\n});",
+              "err": {},
+              "uuid": "0a1b8f10-5e8b-44e0-96d3-f45f9a652da5",
+              "parentUUID": "b158699e-4e25-43a3-93d0-7504caa88b9a",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "0a1b8f10-5e8b-44e0-96d3-f45f9a652da5"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 751,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "40a44122-e486-4be6-b2e7-39566e2b6b9b",
+      "title": "",
+      "fullFile": "cypress\\tests\\backup\\specWithinAndFindMethod.cy.ts",
+      "file": "cypress\\tests\\backup\\specWithinAndFindMethod.cy.ts",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "fa97a314-b02e-46c8-a077-d6e6acc9aba4",
+          "title": "Within test and find",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "find method",
+              "fullTitle": "Within test and find find method",
+              "timedOut": null,
+              "duration": 774,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit(\"https://www.simplyrecipes.com/\");\ncy.get('.showcase__hero').find('.card__title').each(function (title, index) {\n    cy.log(index);\n});",
+              "err": {},
+              "uuid": "c59fd4cf-17ed-4679-ae3e-0de21676b9bc",
+              "parentUUID": "fa97a314-b02e-46c8-a077-d6e6acc9aba4",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "c59fd4cf-17ed-4679-ae3e-0de21676b9bc"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 774,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "53002f7c-1cc4-40d4-8648-49425180f7c1",
+      "title": "",
+      "fullFile": "cypress\\tests\\backup\\specselect.cy.ts",
+      "file": "cypress\\tests\\backup\\specselect.cy.ts",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "84850632-a6b8-4772-aa28-de544261c59f",
+          "title": "template select",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "passes",
+              "fullTitle": "template select passes",
+              "timedOut": null,
+              "duration": 12644,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit(\"https://the-internet.herokuapp.com/dropdown\");\ncy.get(haveselect).select(1);\ncy.get(haveselect).select(\"Option 2\");\ncy.get(\"select option:selected\").should(\"eq\", \"Option 2\");",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 10000ms: expected '<option>' to equal 'Option 2'",
+                "estack": "AssertionError: Timed out retrying after 10000ms: expected '<option>' to equal 'Option 2'\n    at Context.eval (webpack://newapp/./cypress/tests/backup/specselect.cy.ts:8:37)",
+                "diff": null
+              },
+              "uuid": "214c2aa9-c6b3-4b73-9244-a73b5676e124",
+              "parentUUID": "84850632-a6b8-4772-aa28-de544261c59f",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "214c2aa9-c6b3-4b73-9244-a73b5676e124"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 12644,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "25589843-76d5-4ce6-8f8f-e4d4c06084ce",
+      "title": "",
+      "fullFile": "cypress\\tests\\backup\\specsheckbox.cy.ts",
+      "file": "cypress\\tests\\backup\\specsheckbox.cy.ts",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "c28060d3-83eb-49c9-a0c1-f69747bdde51",
+          "title": "template spec",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "passes",
+              "fullTitle": "template spec passes",
+              "timedOut": null,
+              "duration": 2726,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit(\"https://the-internet.herokuapp.com/checkboxes\");\ncy.get(havecheckbox).eq(0).click();\ncy.get(havecheckbox).eq(1).click();\ncy.get(havecheckbox).eq(0).click();\ncy.get(havecheckbox).filter(\":not([checked])\").should(\"have.length\", 2);\ncy.get(havecheckbox).filter(\":not([checked])\").then(function (item) {\n    cy.get(item).click({ multiple: true });\n});",
+              "err": {},
+              "uuid": "f75cdd39-66f1-4d8c-9656-043a46ef9938",
+              "parentUUID": "c28060d3-83eb-49c9-a0c1-f69747bdde51",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "f75cdd39-66f1-4d8c-9656-043a46ef9938"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 2726,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "d6508763-8867-494c-b6c8-d48e48948ddb",
+      "title": "",
+      "fullFile": "cypress\\tests\\components\\FooterTest.ts",
+      "file": "cypress\\tests\\components\\FooterTest.ts",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "9ca50076-4ca7-4187-8e52-6259ce10a9d9",
+          "title": "footer component test",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "test about us",
+              "fullTitle": "footer component test test about us",
+              "timedOut": null,
+              "duration": 1453,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "var expectedData = {\n    header: \"About Us\",\n    desc: \"We believe performance needs to be validated at every stage of the software development cycle and our open source compatible, massively scalable platform makes that a reality.\",\n};\nfooterComp.getAboutUsData().then(function (actualData) {\n    expect(actualData).to.deep.eq(expectedData);\n});",
+              "err": {},
+              "uuid": "f91f1b5c-b23c-432e-977b-717b25abe108",
+              "parentUUID": "9ca50076-4ca7-4187-8e52-6259ce10a9d9",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "test contact us",
+              "fullTitle": "footer component test test contact us",
+              "timedOut": null,
+              "duration": 363,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "var expectedData = { header: \"Get in Touch\",\n    Address: \"2390 El Camino Real\",\n    Phone: \"+440 123456\",\n    Email: \"demo@blazemeter.com\" };\nfooterComp.getContactUsData().then(function (actualData) {\n    expect(actualData.header).to.eq(expectedData.header);\n});",
+              "err": {},
+              "uuid": "a9ad1a43-64f7-4e94-b3d0-a72b635fcbf6",
+              "parentUUID": "9ca50076-4ca7-4187-8e52-6259ce10a9d9",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "f91f1b5c-b23c-432e-977b-717b25abe108",
+            "a9ad1a43-64f7-4e94-b3d0-a72b635fcbf6"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 1816,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "0bc904f1-6817-48f7-ac24-a64891eda547",
+      "title": "",
+      "fullFile": "cypress\\tests\\components\\HeaderTest.ts",
+      "file": "cypress\\tests\\components\\HeaderTest.ts",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "cb0bece7-c9e1-4123-830c-736109f2af06",
+          "title": "header component test",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "test logo",
+              "fullTitle": "header component test test logo",
+              "timedOut": null,
+              "duration": 1006,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "headerComp.brandLogoImg().should(\"be.visible\");\nheaderComp.brandLogo().should(\"contain.text\", \"\");",
+              "err": {},
+              "uuid": "7b820fe7-5b59-4562-acc7-9315f07f4a3f",
+              "parentUUID": "cb0bece7-c9e1-4123-830c-736109f2af06",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "test for header menu details",
+              "fullTitle": "header component test test for header menu details",
+              "timedOut": null,
+              "duration": 363,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "var expectedMenuDetails = [\n    { text: \"Home (current)\", href: \"index.html\" },\n    { text: \"Contact\", href: \"#\" },\n    { text: \"About us\", href: \"#\" },\n    { text: \"Cart\", href: \"cart.html\" },\n    { text: \"Log in\", href: \"#\" },\n    { text: \"Sign up\", href: \"#\" },\n];\nheaderComp.getMenuDetails().then(function (actualMenuDetailsData) {\n    cy.wrap(\"\").then(function () {\n        expect(actualMenuDetailsData).to.be.deep.eq(expectedMenuDetails);\n    });\n    /*  cy.log(JSON.stringify(actualMenuDetailsData)); */\n});",
+              "err": {},
+              "uuid": "8cea5be1-3345-44a2-b547-4ea5d82c9284",
+              "parentUUID": "cb0bece7-c9e1-4123-830c-736109f2af06",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "7b820fe7-5b59-4562-acc7-9315f07f4a3f",
+            "8cea5be1-3345-44a2-b547-4ea5d82c9284"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 1369,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "715f2842-94de-40bc-aaae-6a7f3aefa90f",
+      "title": "",
+      "fullFile": "cypress\\tests\\components\\HomePageCategoryTest.ts",
+      "file": "cypress\\tests\\components\\HomePageCategoryTest.ts",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "434a0180-e8b0-41ad-875e-5240a00387a1",
+          "title": "homepage category component test",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "test phone cate",
+              "fullTitle": "homepage category component test test phone cate",
+              "timedOut": null,
+              "duration": 2556,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "verifyCategoryFilterBy(product);",
+              "err": {},
+              "uuid": "a08b5513-f9c7-4895-b450-cef8fbf99883",
+              "parentUUID": "434a0180-e8b0-41ad-875e-5240a00387a1",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "test notebook cate",
+              "fullTitle": "homepage category component test test notebook cate",
+              "timedOut": null,
+              "duration": 1106,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "verifyCategoryFilterBy(product);",
+              "err": {},
+              "uuid": "90727737-7628-489d-a5aa-578bc76cfc3e",
+              "parentUUID": "434a0180-e8b0-41ad-875e-5240a00387a1",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "test monitor cate",
+              "fullTitle": "homepage category component test test monitor cate",
+              "timedOut": null,
+              "duration": 1205,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "verifyCategoryFilterBy(product);",
+              "err": {},
+              "uuid": "d7523bb7-177a-4b4c-88d4-201e10c9a373",
+              "parentUUID": "434a0180-e8b0-41ad-875e-5240a00387a1",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "a08b5513-f9c7-4895-b450-cef8fbf99883",
+            "90727737-7628-489d-a5aa-578bc76cfc3e",
+            "d7523bb7-177a-4b4c-88d4-201e10c9a373"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 4867,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "bf0d322d-0b29-4ac8-9bb7-d803d43ca668",
+      "title": "",
+      "fullFile": "cypress\\tests\\components\\ProductDetailTest.ts",
+      "file": "cypress\\tests\\components\\ProductDetailTest.ts",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "d6c0e278-9300-460e-aa60-f8049aa47c08",
+          "title": "Product detail test ",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "test product detail",
+              "fullTitle": "Product detail test  test product detail",
+              "timedOut": null,
+              "duration": 2913,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "HomePageAPI_1.HomePageAPI.getHomePageProducts().then(function (apiproduct) {\n    var randomProduct = apiproduct[Math.floor(Math.random() * apiproduct.length)];\n    var randomProductTitle = randomProduct.title.trim().replace(\"\\n\", \"\");\n    cy.contains(randomProductTitle).click();\n    /*  cy.wait(2000); */\n    var productDetails = new ProductDetailComponent_1.default();\n    productDetails.getProductName().should('contain', randomProductTitle);\n    productDetails.getProductPrice().should('contain.text', randomProduct.price);\n});",
+              "err": {},
+              "uuid": "a245e447-6c4d-48a1-af28-76ec052fd2e7",
+              "parentUUID": "d6c0e278-9300-460e-aa60-f8049aa47c08",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "a245e447-6c4d-48a1-af28-76ec052fd2e7"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 2913,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "72fd29cb-c320-48bd-9dda-b9d4ae7050a5",
+      "title": "",
+      "fullFile": "cypress\\tests\\signup\\SignUpTest.ts",
+      "file": "cypress\\tests\\signup\\SignUpTest.ts",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "817ddb0b-db70-44b6-87a3-97094ff98dd1",
+          "title": "SignUp test ",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "test login credential",
+              "fullTitle": "SignUp test  test login credential",
+              "timedOut": null,
+              "duration": 1589,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "var username = SignUp_CREDS.username, password = SignUp_CREDS.password;\nsignup(username, password);\ncy.on('window:alert', function (alert) {\n    expect(alert).to.contains(\"Sign up successful,\");\n});",
+              "err": {},
+              "uuid": "79622d99-d1d2-4e0c-be04-f79b9052453d",
+              "parentUUID": "817ddb0b-db70-44b6-87a3-97094ff98dd1",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "should be able to see userexist",
+              "fullTitle": "SignUp test  should be able to see userexist",
+              "timedOut": null,
+              "duration": 664,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "var password = SignUp_CREDS.password;\nsignup(\"khoa25\", \"\".concat(password, \"_qwdqw\"));\ncy.on('window:alert', function (alert) {\n    expect(alert).to.contains(\"User exist\");\n});",
+              "err": {},
+              "uuid": "feaf4080-949a-4eb4-b424-135293bef34c",
+              "parentUUID": "817ddb0b-db70-44b6-87a3-97094ff98dd1",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "79622d99-d1d2-4e0c-be04-f79b9052453d",
+            "feaf4080-949a-4eb4-b424-135293bef34c"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 2253,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "b4627614-307e-4750-b21b-49433585ab92",
+      "title": "",
+      "fullFile": "cypress\\tests\\authen\\LoginTest.ts",
+      "file": "cypress\\tests\\authen\\LoginTest.ts",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "9d39f97f-dd3b-41f3-be4a-334c35368ea6",
+          "title": "login test ",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "test login credential",
+              "fullTitle": "login test  test login credential",
+              "timedOut": null,
+              "duration": 12290,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "var username = LOGIN_CREDS.username, password = LOGIN_CREDS.password;\nlogin(username, password);\nloginComp.getLoggedUsername().should('be.visible');\nloginComp.getLoggedUsername().should('contain.text', \"Welcome \".concat(LOGIN_CREDS.username));",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 10000ms: expected '<a#nameofuser.nav-link>' to be 'visible'\n\nThis element `<a#nameofuser.nav-link>` is not visible because it has CSS property: `display: none`",
+                "estack": "AssertionError: Timed out retrying after 10000ms: expected '<a#nameofuser.nav-link>' to be 'visible'\n\nThis element `<a#nameofuser.nav-link>` is not visible because it has CSS property: `display: none`\n    at Context.eval (webpack://newapp/./cypress/tests/authen/LoginTest.ts:28:34)",
+                "diff": null
+              },
+              "uuid": "5f3e001e-6b48-4d69-a14d-825caf176593",
+              "parentUUID": "9d39f97f-dd3b-41f3-be4a-334c35368ea6",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "should be able to see wrong pass",
+              "fullTitle": "login test  should be able to see wrong pass",
+              "timedOut": null,
+              "duration": 4426,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "var username = LOGIN_CREDS.username, password = LOGIN_CREDS.password;\nlogin(username, \"\".concat(password, \"_qwdqw\"));\ncy.on('window:alert', function (alert) {\n    expect(alert).to.contains(\"Wrong password\");\n});",
+              "err": {},
+              "uuid": "59dcfaf7-f044-456b-832c-021510bf9acf",
+              "parentUUID": "9d39f97f-dd3b-41f3-be4a-334c35368ea6",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "59dcfaf7-f044-456b-832c-021510bf9acf"
+          ],
+          "failures": [
+            "5f3e001e-6b48-4d69-a14d-825caf176593"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 16716,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.2.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "results",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

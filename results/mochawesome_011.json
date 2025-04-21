@@ -1,0 +1,105 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2025-04-21T03:40:03.102Z",
+    "end": "2025-04-21T03:40:19.063Z",
+    "duration": 15961,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "37517348-0723-4cd8-8737-2e54dd8847a4",
+      "title": "",
+      "fullFile": "cypress\\tests\\backup\\specAmazonSearch.cy.ts",
+      "file": "cypress\\tests\\backup\\specAmazonSearch.cy.ts",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "4f8afb60-fbd6-4ec6-823f-3e064aaec4fa",
+          "title": "Amazon",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "should able to search",
+              "fullTitle": "Amazon should able to search",
+              "timedOut": null,
+              "duration": 12383,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit(\"https://www.amazon.com/\");\nvar SEARCH_TEXT = \"table\";\nvar AmHomePage = new AmazonHomePage_1.default();\nAmHomePage.searchTxtBxElem.type(SEARCH_TEXT);\nAmHomePage.searchBtnElem.click();\nvar AmazSearchResult = new AmazonSearchResult_1.default();\nAmazSearchResult.searchItemElemList.should(\"not.have.length\", 0);",
+              "err": {},
+              "uuid": "137e14b2-5e40-4f66-b468-b9351be3a258",
+              "parentUUID": "4f8afb60-fbd6-4ec6-823f-3e064aaec4fa",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "137e14b2-5e40-4f66-b468-b9351be3a258"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 12383,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.2.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "results",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

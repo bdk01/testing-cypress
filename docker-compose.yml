@@ -1,0 +1,14 @@
+services:
+  jenkins:
+    image: jenkins/jenkins:jdk17
+    container_name: jenkins
+    ports:
+      - "8080:8080"
+      - "50000:50000"  # For connecting agents
+    volumes:
+      - jenkins_data:/var/jenkins_home  # Changed from jenkins_home
+    restart: unless-stopped
+    user: root  # Allow Docker inside Jenkins container
+
+volumes:
+  jenkins_data:

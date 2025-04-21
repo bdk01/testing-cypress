@@ -1,0 +1,129 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 1,
+    "pending": 0,
+    "failures": 1,
+    "start": "2025-04-21T03:35:49.025Z",
+    "end": "2025-04-21T03:36:05.827Z",
+    "duration": 16802,
+    "testsRegistered": 2,
+    "passPercent": 50,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "b4627614-307e-4750-b21b-49433585ab92",
+      "title": "",
+      "fullFile": "cypress\\tests\\authen\\LoginTest.ts",
+      "file": "cypress\\tests\\authen\\LoginTest.ts",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "9d39f97f-dd3b-41f3-be4a-334c35368ea6",
+          "title": "login test ",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "test login credential",
+              "fullTitle": "login test  test login credential",
+              "timedOut": null,
+              "duration": 12290,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "var username = LOGIN_CREDS.username, password = LOGIN_CREDS.password;\nlogin(username, password);\nloginComp.getLoggedUsername().should('be.visible');\nloginComp.getLoggedUsername().should('contain.text', \"Welcome \".concat(LOGIN_CREDS.username));",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 10000ms: expected '<a#nameofuser.nav-link>' to be 'visible'\n\nThis element `<a#nameofuser.nav-link>` is not visible because it has CSS property: `display: none`",
+                "estack": "AssertionError: Timed out retrying after 10000ms: expected '<a#nameofuser.nav-link>' to be 'visible'\n\nThis element `<a#nameofuser.nav-link>` is not visible because it has CSS property: `display: none`\n    at Context.eval (webpack://newapp/./cypress/tests/authen/LoginTest.ts:28:34)",
+                "diff": null
+              },
+              "uuid": "5f3e001e-6b48-4d69-a14d-825caf176593",
+              "parentUUID": "9d39f97f-dd3b-41f3-be4a-334c35368ea6",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "should be able to see wrong pass",
+              "fullTitle": "login test  should be able to see wrong pass",
+              "timedOut": null,
+              "duration": 4426,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "var username = LOGIN_CREDS.username, password = LOGIN_CREDS.password;\nlogin(username, \"\".concat(password, \"_qwdqw\"));\ncy.on('window:alert', function (alert) {\n    expect(alert).to.contains(\"Wrong password\");\n});",
+              "err": {},
+              "uuid": "59dcfaf7-f044-456b-832c-021510bf9acf",
+              "parentUUID": "9d39f97f-dd3b-41f3-be4a-334c35368ea6",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "59dcfaf7-f044-456b-832c-021510bf9acf"
+          ],
+          "failures": [
+            "5f3e001e-6b48-4d69-a14d-825caf176593"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 16716,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.2.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "results",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}
