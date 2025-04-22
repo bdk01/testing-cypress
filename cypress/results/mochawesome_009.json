@@ -2,14 +2,14 @@
   "stats": {
     "suites": 1,
     "tests": 1,
-    "passes": 1,
+    "passes": 0,
     "pending": 0,
-    "failures": 0,
-    "start": "2025-04-21T03:40:29.396Z",
-    "end": "2025-04-21T03:40:32.542Z",
-    "duration": 3146,
+    "failures": 1,
+    "start": "2025-04-22T01:20:16.057Z",
+    "end": "2025-04-22T01:20:20.016Z",
+    "duration": 3959,
     "testsRegistered": 1,
-    "passPercent": 100,
+    "passPercent": 0,
     "pendingPercent": 0,
     "other": 0,
     "hasOther": false,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "9e8875d2-678c-421c-b92e-8cdc41135fbd",
+      "uuid": "0db0873b-c1da-4368-bea0-50b4a2c5f822",
       "title": "",
       "fullFile": "cypress\\tests\\backup\\specSRHomePageTest.cy.ts",
       "file": "cypress\\tests\\backup\\specSRHomePageTest.cy.ts",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "b158699e-4e25-43a3-93d0-7504caa88b9a",
+          "uuid": "088b0a4d-fbd0-4614-8c3d-b8c893909e56",
           "title": "SR homepage",
           "fullFile": "",
           "file": "",
@@ -38,29 +38,33 @@
               "title": "within method",
               "fullTitle": "SR homepage within method",
               "timedOut": null,
-              "duration": 751,
-              "state": "passed",
-              "speed": "fast",
-              "pass": true,
-              "fail": false,
+              "duration": 1311,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
               "pending": false,
               "context": null,
               "code": "cy.visit(\"https://www.simplyrecipes.com/\");\nnew SRHomePage_1.SRHomePage().getHeroComTitle().then(function (title) {\n    cy.wrap(\"\").then(function () {\n        expect(title).to.be.eq('My Dutch Baby Recipe Is Totally Foolproof—I Make It Every Weekend');\n    });\n});",
-              "err": {},
-              "uuid": "0a1b8f10-5e8b-44e0-96d3-f45f9a652da5",
-              "parentUUID": "b158699e-4e25-43a3-93d0-7504caa88b9a",
+              "err": {
+                "message": "AssertionError: expected 'My Uncle Oliver’s Spiced Roasted Potatoes Are My Favorite Side Dish' to equal 'My Dutch Baby Recipe Is Totally Foolproof—I Make It Every Weekend'",
+                "estack": "AssertionError: expected 'My Uncle Oliver’s Spiced Roasted Potatoes Are My Favorite Side Dish' to equal 'My Dutch Baby Recipe Is Totally Foolproof—I Make It Every Weekend'\n    at Context.eval (webpack://newapp/./cypress/tests/backup/specSRHomePageTest.cy.ts:9:36)\n    at getRet (https://www.simplyrecipes.com/__cypress/runner/cypress_runner.js:119652:20)\n    at tryCatcher (https://www.simplyrecipes.com/__cypress/runner/cypress_runner.js:1777:23)\n    at Promise.attempt.Promise.try (https://www.simplyrecipes.com/__cypress/runner/cypress_runner.js:4285:29)\n    at Context.thenFn (https://www.simplyrecipes.com/__cypress/runner/cypress_runner.js:119663:66)\n    at Context.then (https://www.simplyrecipes.com/__cypress/runner/cypress_runner.js:119914:21)",
+                "diff": "- 'My Uncle Oliver’s Spiced Roasted Potatoes Are My Favorite Side Dish'\n+ 'My Dutch Baby Recipe Is Totally Foolproof—I Make It Every Weekend'\n"
+              },
+              "uuid": "b7f52f7b-981a-42b3-bb21-e936a7fbb50e",
+              "parentUUID": "088b0a4d-fbd0-4614-8c3d-b8c893909e56",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
-          "passes": [
-            "0a1b8f10-5e8b-44e0-96d3-f45f9a652da5"
+          "passes": [],
+          "failures": [
+            "b7f52f7b-981a-42b3-bb21-e936a7fbb50e"
           ],
-          "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 751,
+          "duration": 1311,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
@@ -94,7 +98,7 @@
     },
     "marge": {
       "options": {
-        "reportDir": "results",
+        "reportDir": "cypress/results",
         "overwrite": false,
         "html": false,
         "json": true

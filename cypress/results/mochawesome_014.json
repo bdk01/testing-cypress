@@ -2,14 +2,14 @@
   "stats": {
     "suites": 1,
     "tests": 2,
-    "passes": 1,
+    "passes": 2,
     "pending": 0,
-    "failures": 1,
-    "start": "2025-04-21T03:35:49.025Z",
-    "end": "2025-04-21T03:36:05.827Z",
-    "duration": 16802,
+    "failures": 0,
+    "start": "2025-04-22T01:20:58.053Z",
+    "end": "2025-04-22T01:21:02.849Z",
+    "duration": 4796,
     "testsRegistered": 2,
-    "passPercent": 50,
+    "passPercent": 100,
     "pendingPercent": 0,
     "other": 0,
     "hasOther": false,
@@ -18,16 +18,16 @@
   },
   "results": [
     {
-      "uuid": "b4627614-307e-4750-b21b-49433585ab92",
+      "uuid": "c549c5b5-d50a-4c90-b604-3c1aa1c92b05",
       "title": "",
-      "fullFile": "cypress\\tests\\authen\\LoginTest.ts",
-      "file": "cypress\\tests\\authen\\LoginTest.ts",
+      "fullFile": "cypress\\tests\\authen\\LoginTest.cy.ts",
+      "file": "cypress\\tests\\authen\\LoginTest.cy.ts",
       "beforeHooks": [],
       "afterHooks": [],
       "tests": [],
       "suites": [
         {
-          "uuid": "9d39f97f-dd3b-41f3-be4a-334c35368ea6",
+          "uuid": "65c0dacb-8530-4591-b00b-e7aa76d2da57",
           "title": "login test ",
           "fullFile": "",
           "file": "",
@@ -38,21 +38,17 @@
               "title": "test login credential",
               "fullTitle": "login test  test login credential",
               "timedOut": null,
-              "duration": 12290,
-              "state": "failed",
-              "speed": null,
-              "pass": false,
-              "fail": true,
+              "duration": 3390,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
               "pending": false,
               "context": null,
               "code": "var username = LOGIN_CREDS.username, password = LOGIN_CREDS.password;\nlogin(username, password);\nloginComp.getLoggedUsername().should('be.visible');\nloginComp.getLoggedUsername().should('contain.text', \"Welcome \".concat(LOGIN_CREDS.username));",
-              "err": {
-                "message": "AssertionError: Timed out retrying after 10000ms: expected '<a#nameofuser.nav-link>' to be 'visible'\n\nThis element `<a#nameofuser.nav-link>` is not visible because it has CSS property: `display: none`",
-                "estack": "AssertionError: Timed out retrying after 10000ms: expected '<a#nameofuser.nav-link>' to be 'visible'\n\nThis element `<a#nameofuser.nav-link>` is not visible because it has CSS property: `display: none`\n    at Context.eval (webpack://newapp/./cypress/tests/authen/LoginTest.ts:28:34)",
-                "diff": null
-              },
-              "uuid": "5f3e001e-6b48-4d69-a14d-825caf176593",
-              "parentUUID": "9d39f97f-dd3b-41f3-be4a-334c35368ea6",
+              "err": {},
+              "uuid": "8c6eb028-4774-402b-8e62-5e310e46397a",
+              "parentUUID": "65c0dacb-8530-4591-b00b-e7aa76d2da57",
               "isHook": false,
               "skipped": false
             },
@@ -60,7 +56,7 @@
               "title": "should be able to see wrong pass",
               "fullTitle": "login test  should be able to see wrong pass",
               "timedOut": null,
-              "duration": 4426,
+              "duration": 1292,
               "state": "passed",
               "speed": "fast",
               "pass": true,
@@ -69,22 +65,21 @@
               "context": null,
               "code": "var username = LOGIN_CREDS.username, password = LOGIN_CREDS.password;\nlogin(username, \"\".concat(password, \"_qwdqw\"));\ncy.on('window:alert', function (alert) {\n    expect(alert).to.contains(\"Wrong password\");\n});",
               "err": {},
-              "uuid": "59dcfaf7-f044-456b-832c-021510bf9acf",
-              "parentUUID": "9d39f97f-dd3b-41f3-be4a-334c35368ea6",
+              "uuid": "a1cb5e52-616a-4567-9f32-d02e1d4f53e1",
+              "parentUUID": "65c0dacb-8530-4591-b00b-e7aa76d2da57",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "59dcfaf7-f044-456b-832c-021510bf9acf"
+            "8c6eb028-4774-402b-8e62-5e310e46397a",
+            "a1cb5e52-616a-4567-9f32-d02e1d4f53e1"
           ],
-          "failures": [
-            "5f3e001e-6b48-4d69-a14d-825caf176593"
-          ],
+          "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 16716,
+          "duration": 4682,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
@@ -118,7 +113,7 @@
     },
     "marge": {
       "options": {
-        "reportDir": "results",
+        "reportDir": "cypress/results",
         "overwrite": false,
         "html": false,
         "json": true

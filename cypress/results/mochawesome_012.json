@@ -5,9 +5,9 @@
     "passes": 2,
     "pending": 0,
     "failures": 0,
-    "start": "2025-04-21T03:41:17.583Z",
-    "end": "2025-04-21T03:41:19.918Z",
-    "duration": 2335,
+    "start": "2025-04-22T01:20:33.428Z",
+    "end": "2025-04-22T01:20:36.235Z",
+    "duration": 2807,
     "testsRegistered": 2,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "72fd29cb-c320-48bd-9dda-b9d4ae7050a5",
+      "uuid": "286c3a6c-8c97-4d91-8d3f-3713dd739c86",
       "title": "",
       "fullFile": "cypress\\tests\\signup\\SignUpTest.ts",
       "file": "cypress\\tests\\signup\\SignUpTest.ts",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "817ddb0b-db70-44b6-87a3-97094ff98dd1",
+          "uuid": "c7151cd1-ce71-46cb-a5c5-eebdba35499e",
           "title": "SignUp test ",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "test login credential",
               "fullTitle": "SignUp test  test login credential",
               "timedOut": null,
-              "duration": 1589,
+              "duration": 1871,
               "state": "passed",
               "speed": "fast",
               "pass": true,
@@ -47,8 +47,8 @@
               "context": null,
               "code": "var username = SignUp_CREDS.username, password = SignUp_CREDS.password;\nsignup(username, password);\ncy.on('window:alert', function (alert) {\n    expect(alert).to.contains(\"Sign up successful,\");\n});",
               "err": {},
-              "uuid": "79622d99-d1d2-4e0c-be04-f79b9052453d",
-              "parentUUID": "817ddb0b-db70-44b6-87a3-97094ff98dd1",
+              "uuid": "30684734-b055-4e4d-867d-515fac46c72d",
+              "parentUUID": "c7151cd1-ce71-46cb-a5c5-eebdba35499e",
               "isHook": false,
               "skipped": false
             },
@@ -56,7 +56,7 @@
               "title": "should be able to see userexist",
               "fullTitle": "SignUp test  should be able to see userexist",
               "timedOut": null,
-              "duration": 664,
+              "duration": 847,
               "state": "passed",
               "speed": "fast",
               "pass": true,
@@ -65,21 +65,21 @@
               "context": null,
               "code": "var password = SignUp_CREDS.password;\nsignup(\"khoa25\", \"\".concat(password, \"_qwdqw\"));\ncy.on('window:alert', function (alert) {\n    expect(alert).to.contains(\"User exist\");\n});",
               "err": {},
-              "uuid": "feaf4080-949a-4eb4-b424-135293bef34c",
-              "parentUUID": "817ddb0b-db70-44b6-87a3-97094ff98dd1",
+              "uuid": "f5bf9be1-281d-402a-a62e-950b60226fc4",
+              "parentUUID": "c7151cd1-ce71-46cb-a5c5-eebdba35499e",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "79622d99-d1d2-4e0c-be04-f79b9052453d",
-            "feaf4080-949a-4eb4-b424-135293bef34c"
+            "30684734-b055-4e4d-867d-515fac46c72d",
+            "f5bf9be1-281d-402a-a62e-950b60226fc4"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 2253,
+          "duration": 2718,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
@@ -113,7 +113,7 @@
     },
     "marge": {
       "options": {
-        "reportDir": "results",
+        "reportDir": "cypress/results",
         "overwrite": false,
         "html": false,
         "json": true

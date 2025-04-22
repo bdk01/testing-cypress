@@ -10,6 +10,5 @@ export default defineConfig({
     baseUrl:"https://demoblaze.com/"
     
   },
-  reporter: 'mochawesome',
   defaultCommandTimeout:10000
 });

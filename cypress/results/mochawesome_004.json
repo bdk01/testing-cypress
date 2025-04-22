@@ -5,9 +5,9 @@
     "passes": 1,
     "pending": 0,
     "failures": 0,
-    "start": "2025-04-21T03:39:48.494Z",
-    "end": "2025-04-21T03:39:54.867Z",
-    "duration": 6373,
+    "start": "2025-04-22T01:18:51.664Z",
+    "end": "2025-04-22T01:18:58.484Z",
+    "duration": 6820,
     "testsRegistered": 1,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "6eb4ee60-fb18-4ae3-afbd-ac30c5f16723",
+      "uuid": "471def4d-eaf9-4f90-902c-fae598233d20",
       "title": "",
       "fullFile": "cypress\\tests\\backup\\spec.cy.ts",
       "file": "cypress\\tests\\backup\\spec.cy.ts",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "7407cd2a-8b16-4e9f-8187-a4a772aad3bc",
+          "uuid": "397aa8cb-192c-44eb-8b66-4c7fda2797dc",
           "title": "template spec",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "passes",
               "fullTitle": "template spec passes",
               "timedOut": null,
-              "duration": 3380,
+              "duration": 3597,
               "state": "passed",
               "speed": "fast",
               "pass": true,
@@ -47,20 +47,20 @@
               "context": null,
               "code": "cy.visit(\"https://the-internet.herokuapp.com/login\");\n/* cy.get(\"#username\").type('tomsmith')\ncy.get(\"#password\").type('SuperSecretPassword!')\ncy.get(\"#login > button\").click()\ncy.wait(3000) */\nvar gg = cy.get(\"input\");\n/* gg.eq(0).type('qwewqe') */\ngg.then(function (items) {\n    cy.get(items[0]).clear();\n    cy.get(items[0]).type('qwdqdw');\n    cy.get(items[1]).type('qwdqdw');\n});",
               "err": {},
-              "uuid": "8cfe2b5a-30b1-46ef-8644-6af0f251a796",
-              "parentUUID": "7407cd2a-8b16-4e9f-8187-a4a772aad3bc",
+              "uuid": "456c44f1-c2ac-4a78-b889-5b728668383c",
+              "parentUUID": "397aa8cb-192c-44eb-8b66-4c7fda2797dc",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "8cfe2b5a-30b1-46ef-8644-6af0f251a796"
+            "456c44f1-c2ac-4a78-b889-5b728668383c"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 3380,
+          "duration": 3597,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
@@ -94,7 +94,7 @@
     },
     "marge": {
       "options": {
-        "reportDir": "results",
+        "reportDir": "cypress/results",
         "overwrite": false,
         "html": false,
         "json": true

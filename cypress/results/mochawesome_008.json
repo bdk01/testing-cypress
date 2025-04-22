@@ -2,14 +2,14 @@
   "stats": {
     "suites": 1,
     "tests": 1,
-    "passes": 1,
+    "passes": 0,
     "pending": 0,
-    "failures": 0,
-    "start": "2025-04-21T03:40:26.143Z",
-    "end": "2025-04-21T03:40:27.930Z",
-    "duration": 1787,
+    "failures": 1,
+    "start": "2025-04-22T01:19:51.073Z",
+    "end": "2025-04-22T01:20:14.059Z",
+    "duration": 22986,
     "testsRegistered": 1,
-    "passPercent": 100,
+    "passPercent": 0,
     "pendingPercent": 0,
     "other": 0,
     "hasOther": false,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "2855a499-acb0-4915-a759-3e53f3b54dfe",
+      "uuid": "3cafee1c-b004-459e-89d5-9815b85f21ec",
       "title": "",
       "fullFile": "cypress\\tests\\backup\\specDemoBlazeBeforeTest.cy.ts",
       "file": "cypress\\tests\\backup\\specDemoBlazeBeforeTest.cy.ts",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "679ce8c8-17a9-4fea-a4ba-61f25ef47854",
+          "uuid": "0400696d-9ca7-4c8d-836f-2b6fdf7fbd97",
           "title": "Blaze homepage test before",
           "fullFile": "",
           "file": "",
@@ -38,29 +38,33 @@
               "title": "balze test card",
               "fullTitle": "Blaze homepage test before balze test card",
               "timedOut": null,
-              "duration": 1669,
-              "state": "passed",
-              "speed": "fast",
-              "pass": true,
-              "fail": false,
+              "duration": 22929,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
               "pending": false,
               "context": null,
               "code": "var apiItem = apiProduct.map(function (item) {\n    return {\n        itemName: item.title.replace(\"\\n\", \"\"),\n        itemPrice: \"$\".concat(item.price),\n    };\n});\nnew DemoBlazePage_1.default().getAllCardData().then(function (allCardData) {\n    cy.wrap(\"\").then(function () {\n        expect(allCardData).to.have.deep.eq(apiItem);\n    });\n});",
-              "err": {},
-              "uuid": "93d23de8-d4f7-4d31-976c-4cfabab1b170",
-              "parentUUID": "679ce8c8-17a9-4fea-a4ba-61f25ef47854",
+              "err": {
+                "message": "TypeError: Cannot read properties of undefined (reading 'body')\n\nBecause this error occurred during a `before all` hook we are skipping the remaining tests in the current suite: `Blaze homepage test before`",
+                "estack": "TypeError: Cannot read properties of undefined (reading 'body')\n\nBecause this error occurred during a `before all` hook we are skipping the remaining tests in the current suite: `Blaze homepage test before`\n    at Context.eval (webpack://newapp/./cypress/support/HomePageAPI.ts:6:36)\n    at getRet (https://demoblaze.com/__cypress/runner/cypress_runner.js:119652:20)\n    at tryCatcher (https://demoblaze.com/__cypress/runner/cypress_runner.js:1777:23)\n    at Promise.attempt.Promise.try (https://demoblaze.com/__cypress/runner/cypress_runner.js:4285:29)\n    at Context.thenFn (https://demoblaze.com/__cypress/runner/cypress_runner.js:119663:66)\n    at Context.then (https://demoblaze.com/__cypress/runner/cypress_runner.js:119914:21)\n    at wrapped (https://demoblaze.com/__cypress/runner/cypress_runner.js:140191:19)\n    at <unknown> (https://demoblaze.com/__cypress/runner/cypress_runner.js:146136:15)\n    at tryCatcher (https://demoblaze.com/__cypress/runner/cypress_runner.js:1777:23)",
+                "diff": null
+              },
+              "uuid": "3434ed7b-19da-4ab7-850f-fd98b719a60b",
+              "parentUUID": "0400696d-9ca7-4c8d-836f-2b6fdf7fbd97",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
-          "passes": [
-            "93d23de8-d4f7-4d31-976c-4cfabab1b170"
+          "passes": [],
+          "failures": [
+            "3434ed7b-19da-4ab7-850f-fd98b719a60b"
           ],
-          "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 1669,
+          "duration": 22929,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
@@ -94,7 +98,7 @@
     },
     "marge": {
       "options": {
-        "reportDir": "results",
+        "reportDir": "cypress/results",
         "overwrite": false,
         "html": false,
         "json": true

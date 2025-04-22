@@ -5,9 +5,9 @@
     "passes": 1,
     "pending": 0,
     "failures": 0,
-    "start": "2025-04-21T06:36:00.076Z",
-    "end": "2025-04-21T06:36:03.268Z",
-    "duration": 3192,
+    "start": "2025-04-22T01:19:06.711Z",
+    "end": "2025-04-22T01:19:21.982Z",
+    "duration": 15271,
     "testsRegistered": 1,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,49 +18,49 @@
   },
   "results": [
     {
-      "uuid": "ac281504-5abd-47c8-83ac-ea13dd96ecf8",
+      "uuid": "2ead05a9-7373-40fc-a7a2-b42a3aaf8ae0",
       "title": "",
-      "fullFile": "cypress\\tests\\backup\\specSRHomePageTest.cy.ts",
-      "file": "cypress\\tests\\backup\\specSRHomePageTest.cy.ts",
+      "fullFile": "cypress\\tests\\backup\\specAmazonSearch.cy.ts",
+      "file": "cypress\\tests\\backup\\specAmazonSearch.cy.ts",
       "beforeHooks": [],
       "afterHooks": [],
       "tests": [],
       "suites": [
         {
-          "uuid": "b430fe5c-0585-4958-8196-8ef983cc0a03",
-          "title": "SR homepage",
+          "uuid": "39ac2e63-5be3-4bed-95f7-9230b5037365",
+          "title": "Amazon",
           "fullFile": "",
           "file": "",
           "beforeHooks": [],
           "afterHooks": [],
           "tests": [
             {
-              "title": "within method",
-              "fullTitle": "SR homepage within method",
+              "title": "should able to search",
+              "fullTitle": "Amazon should able to search",
               "timedOut": null,
-              "duration": 799,
+              "duration": 11671,
               "state": "passed",
-              "speed": "fast",
+              "speed": "slow",
               "pass": true,
               "fail": false,
               "pending": false,
               "context": null,
-              "code": "cy.visit(\"https://www.simplyrecipes.com/\");\nnew SRHomePage_1.SRHomePage().getHeroComTitle().then(function (title) {\n    cy.wrap(\"\").then(function () {\n        expect(title).to.be.eq('My Dutch Baby Recipe Is Totally Foolproof—I Make It Every Weekend');\n    });\n});",
+              "code": "cy.visit(\"https://www.amazon.com/\");\nvar SEARCH_TEXT = \"table\";\nvar AmHomePage = new AmazonHomePage_1.default();\nAmHomePage.searchTxtBxElem.type(SEARCH_TEXT);\nAmHomePage.searchBtnElem.click();\nvar AmazSearchResult = new AmazonSearchResult_1.default();\nAmazSearchResult.searchItemElemList.should(\"not.have.length\", 0);",
               "err": {},
-              "uuid": "83981a78-0b2a-4de9-a15d-6fdbd452a776",
-              "parentUUID": "b430fe5c-0585-4958-8196-8ef983cc0a03",
+              "uuid": "cbf3b932-333d-4888-ad63-bff2212a0fdd",
+              "parentUUID": "39ac2e63-5be3-4bed-95f7-9230b5037365",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "83981a78-0b2a-4de9-a15d-6fdbd452a776"
+            "cbf3b932-333d-4888-ad63-bff2212a0fdd"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 799,
+          "duration": 11671,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
@@ -94,7 +94,7 @@
     },
     "marge": {
       "options": {
-        "reportDir": "results",
+        "reportDir": "cypress/results",
         "overwrite": false,
         "html": false,
         "json": true

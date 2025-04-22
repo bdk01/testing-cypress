@@ -2,14 +2,14 @@
   "stats": {
     "suites": 1,
     "tests": 1,
-    "passes": 1,
+    "passes": 0,
     "pending": 0,
-    "failures": 0,
-    "start": "2025-04-21T03:41:13.123Z",
-    "end": "2025-04-21T03:41:16.101Z",
-    "duration": 2978,
+    "failures": 1,
+    "start": "2025-04-22T01:18:26.294Z",
+    "end": "2025-04-22T01:18:49.239Z",
+    "duration": 22945,
     "testsRegistered": 1,
-    "passPercent": 100,
+    "passPercent": 0,
     "pendingPercent": 0,
     "other": 0,
     "hasOther": false,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "bf0d322d-0b29-4ac8-9bb7-d803d43ca668",
+      "uuid": "f096d2c9-dc67-4560-bda3-9c9892653f12",
       "title": "",
       "fullFile": "cypress\\tests\\components\\ProductDetailTest.ts",
       "file": "cypress\\tests\\components\\ProductDetailTest.ts",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "d6c0e278-9300-460e-aa60-f8049aa47c08",
+          "uuid": "7b003050-e0fe-47fd-91dd-7d207689b7d4",
           "title": "Product detail test ",
           "fullFile": "",
           "file": "",
@@ -38,29 +38,33 @@
               "title": "test product detail",
               "fullTitle": "Product detail test  test product detail",
               "timedOut": null,
-              "duration": 2913,
-              "state": "passed",
-              "speed": "fast",
-              "pass": true,
-              "fail": false,
+              "duration": 22889,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
               "pending": false,
               "context": null,
               "code": "HomePageAPI_1.HomePageAPI.getHomePageProducts().then(function (apiproduct) {\n    var randomProduct = apiproduct[Math.floor(Math.random() * apiproduct.length)];\n    var randomProductTitle = randomProduct.title.trim().replace(\"\\n\", \"\");\n    cy.contains(randomProductTitle).click();\n    /*  cy.wait(2000); */\n    var productDetails = new ProductDetailComponent_1.default();\n    productDetails.getProductName().should('contain', randomProductTitle);\n    productDetails.getProductPrice().should('contain.text', randomProduct.price);\n});",
-              "err": {},
-              "uuid": "a245e447-6c4d-48a1-af28-76ec052fd2e7",
-              "parentUUID": "d6c0e278-9300-460e-aa60-f8049aa47c08",
+              "err": {
+                "message": "TypeError: Cannot read properties of undefined (reading 'body')",
+                "estack": "TypeError: Cannot read properties of undefined (reading 'body')\n    at Context.eval (webpack://newapp/./cypress/support/HomePageAPI.ts:6:36)\n    at getRet (https://demoblaze.com/__cypress/runner/cypress_runner.js:119652:20)\n    at tryCatcher (https://demoblaze.com/__cypress/runner/cypress_runner.js:1777:23)\n    at Promise.attempt.Promise.try (https://demoblaze.com/__cypress/runner/cypress_runner.js:4285:29)\n    at Context.thenFn (https://demoblaze.com/__cypress/runner/cypress_runner.js:119663:66)\n    at Context.then (https://demoblaze.com/__cypress/runner/cypress_runner.js:119914:21)\n    at wrapped (https://demoblaze.com/__cypress/runner/cypress_runner.js:140191:19)\n    at <unknown> (https://demoblaze.com/__cypress/runner/cypress_runner.js:146136:15)\n    at tryCatcher (https://demoblaze.com/__cypress/runner/cypress_runner.js:1777:23)",
+                "diff": null
+              },
+              "uuid": "6177a7e2-dc66-4629-a2bb-6cb0e4ed5357",
+              "parentUUID": "7b003050-e0fe-47fd-91dd-7d207689b7d4",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
-          "passes": [
-            "a245e447-6c4d-48a1-af28-76ec052fd2e7"
+          "passes": [],
+          "failures": [
+            "6177a7e2-dc66-4629-a2bb-6cb0e4ed5357"
           ],
-          "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 2913,
+          "duration": 22889,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
@@ -94,7 +98,7 @@
     },
     "marge": {
       "options": {
-        "reportDir": "results",
+        "reportDir": "cypress/results",
         "overwrite": false,
         "html": false,
         "json": true

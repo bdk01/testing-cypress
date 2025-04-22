@@ -2,14 +2,14 @@
   "stats": {
     "suites": 1,
     "tests": 1,
-    "passes": 0,
+    "passes": 1,
     "pending": 0,
-    "failures": 1,
-    "start": "2025-04-21T03:40:37.829Z",
-    "end": "2025-04-21T03:40:52.404Z",
-    "duration": 14575,
+    "failures": 0,
+    "start": "2025-04-22T01:20:26.285Z",
+    "end": "2025-04-22T01:20:31.884Z",
+    "duration": 5599,
     "testsRegistered": 1,
-    "passPercent": 0,
+    "passPercent": 100,
     "pendingPercent": 0,
     "other": 0,
     "hasOther": false,
@@ -18,17 +18,17 @@
   },
   "results": [
     {
-      "uuid": "53002f7c-1cc4-40d4-8648-49425180f7c1",
+      "uuid": "060511f6-d68d-4b11-a92d-2f9d0f2b1878",
       "title": "",
-      "fullFile": "cypress\\tests\\backup\\specselect.cy.ts",
-      "file": "cypress\\tests\\backup\\specselect.cy.ts",
+      "fullFile": "cypress\\tests\\backup\\specsheckbox.cy.ts",
+      "file": "cypress\\tests\\backup\\specsheckbox.cy.ts",
       "beforeHooks": [],
       "afterHooks": [],
       "tests": [],
       "suites": [
         {
-          "uuid": "84850632-a6b8-4772-aa28-de544261c59f",
-          "title": "template select",
+          "uuid": "b8ddde2b-4db1-4a35-b681-5d8ad4a2a77d",
+          "title": "template spec",
           "fullFile": "",
           "file": "",
           "beforeHooks": [],
@@ -36,35 +36,31 @@
           "tests": [
             {
               "title": "passes",
-              "fullTitle": "template select passes",
+              "fullTitle": "template spec passes",
               "timedOut": null,
-              "duration": 12644,
-              "state": "failed",
-              "speed": null,
-              "pass": false,
-              "fail": true,
+              "duration": 3022,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
               "pending": false,
               "context": null,
-              "code": "cy.visit(\"https://the-internet.herokuapp.com/dropdown\");\ncy.get(haveselect).select(1);\ncy.get(haveselect).select(\"Option 2\");\ncy.get(\"select option:selected\").should(\"eq\", \"Option 2\");",
-              "err": {
-                "message": "AssertionError: Timed out retrying after 10000ms: expected '<option>' to equal 'Option 2'",
-                "estack": "AssertionError: Timed out retrying after 10000ms: expected '<option>' to equal 'Option 2'\n    at Context.eval (webpack://newapp/./cypress/tests/backup/specselect.cy.ts:8:37)",
-                "diff": null
-              },
-              "uuid": "214c2aa9-c6b3-4b73-9244-a73b5676e124",
-              "parentUUID": "84850632-a6b8-4772-aa28-de544261c59f",
+              "code": "cy.visit(\"https://the-internet.herokuapp.com/checkboxes\");\ncy.get(havecheckbox).eq(0).click();\ncy.get(havecheckbox).eq(1).click();\ncy.get(havecheckbox).eq(0).click();\ncy.get(havecheckbox).filter(\":not([checked])\").should(\"have.length\", 2);\ncy.get(havecheckbox).filter(\":not([checked])\").then(function (item) {\n    cy.get(item).click({ multiple: true });\n});",
+              "err": {},
+              "uuid": "3746f46a-9569-4a65-b0fb-49a76d0e7bbd",
+              "parentUUID": "b8ddde2b-4db1-4a35-b681-5d8ad4a2a77d",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
-          "passes": [],
-          "failures": [
-            "214c2aa9-c6b3-4b73-9244-a73b5676e124"
+          "passes": [
+            "3746f46a-9569-4a65-b0fb-49a76d0e7bbd"
           ],
+          "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 12644,
+          "duration": 3022,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
@@ -98,7 +94,7 @@
     },
     "marge": {
       "options": {
-        "reportDir": "results",
+        "reportDir": "cypress/results",
         "overwrite": false,
         "html": false,
         "json": true

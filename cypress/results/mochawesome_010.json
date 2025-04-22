@@ -5,9 +5,9 @@
     "passes": 1,
     "pending": 0,
     "failures": 0,
-    "start": "2025-04-21T06:36:05.162Z",
-    "end": "2025-04-21T06:36:08.036Z",
-    "duration": 2874,
+    "start": "2025-04-22T01:20:21.694Z",
+    "end": "2025-04-22T01:20:24.721Z",
+    "duration": 3027,
     "testsRegistered": 1,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "6f8081b7-c46c-47ef-a4ee-633ad168be85",
+      "uuid": "4d584aad-c955-49e8-9498-3647e7b02379",
       "title": "",
       "fullFile": "cypress\\tests\\backup\\specWithinAndFindMethod.cy.ts",
       "file": "cypress\\tests\\backup\\specWithinAndFindMethod.cy.ts",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "4f428d6f-2488-43e5-8dfd-160f641c1ae2",
+          "uuid": "ee62916c-f9a2-4d0f-9db4-3a70a5872b23",
           "title": "Within test and find",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "find method",
               "fullTitle": "Within test and find find method",
               "timedOut": null,
-              "duration": 776,
+              "duration": 990,
               "state": "passed",
               "speed": "fast",
               "pass": true,
@@ -47,20 +47,20 @@
               "context": null,
               "code": "cy.visit(\"https://www.simplyrecipes.com/\");\ncy.get('.showcase__hero').find('.card__title').each(function (title, index) {\n    cy.log(index);\n});",
               "err": {},
-              "uuid": "73592ef4-3550-4ae6-a2da-14789222c69a",
-              "parentUUID": "4f428d6f-2488-43e5-8dfd-160f641c1ae2",
+              "uuid": "e9da0446-2326-4102-8e6f-f3c34018817e",
+              "parentUUID": "ee62916c-f9a2-4d0f-9db4-3a70a5872b23",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "73592ef4-3550-4ae6-a2da-14789222c69a"
+            "e9da0446-2326-4102-8e6f-f3c34018817e"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 776,
+          "duration": 990,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
@@ -94,7 +94,7 @@
     },
     "marge": {
       "options": {
-        "reportDir": "results",
+        "reportDir": "cypress/results",
         "overwrite": false,
         "html": false,
         "json": true
